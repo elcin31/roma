@@ -2,6 +2,8 @@
 
 Цифровой музей Римского мира. Русскоязычное статическое издание на Astro с подлинными музейными фотографиями, связанной исторической моделью и интерактивным атласом MapLibre.
 
+Работающий сайт: **https://roma-coral.vercel.app**.
+
 Единственный репозиторий: https://github.com/elcin31/roma. Ветка production: `main`.
 Vercel: scope `elcin31s-projects`, проект `roma` (`prj_oaL79Qwd8N02Zjl2A3q0Aect8t2Z`).
 
