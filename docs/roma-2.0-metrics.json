@@ -1,0 +1,324 @@
+{
+  "method": {
+    "lighthouse": "13.5.0",
+    "base": "http://localhost:4321",
+    "runsPerPage": 3,
+    "profile": "mobile, simulated throttling",
+    "note": "Lab metrics, not real user monitoring. WebGL uses software SwiftShader; TBT is not INP.",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+  },
+  "baseline": {
+    "home": {
+      "runs": [
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1893.4888,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 2102.5
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1880.9389,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 2301
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1884.2872000000002,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 1939
+        }
+      ],
+      "median": {
+        "performance": 99.0,
+        "accessibility": 100,
+        "lcpMs": 1884.2872000000002,
+        "cls": 0,
+        "tbtMs": 0,
+        "benchmarkIndex": 2102.5
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1516.1305499999999,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 1893
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1519.2528,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 1904.5
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1507.071,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 2104.5
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "lcpMs": 1516.1305499999999,
+        "cls": 0.000110247526811016,
+        "tbtMs": 0,
+        "benchmarkIndex": 1904.5
+      }
+    },
+    "atlas": {
+      "runs": [
+        {
+          "performance": 74.0,
+          "accessibility": 100,
+          "lcpMs": 2107.194,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1244.5000000000005,
+          "benchmarkIndex": 2407
+        },
+        {
+          "performance": 72.0,
+          "accessibility": 100,
+          "lcpMs": 1360.4782500000001,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1914.5,
+          "benchmarkIndex": 2037.5
+        },
+        {
+          "performance": 72.0,
+          "accessibility": 100,
+          "lcpMs": 2107.4345,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1567.000000000001,
+          "benchmarkIndex": 2149
+        }
+      ],
+      "median": {
+        "performance": 72.0,
+        "accessibility": 100,
+        "lcpMs": 2107.194,
+        "cls": 0.000110247526811016,
+        "tbtMs": 1567.000000000001,
+        "benchmarkIndex": 2149
+      }
+    }
+  },
+  "after": {
+    "home": {
+      "runs": [
+        {
+          "performance": 99,
+          "accessibility": 100,
+          "lcpMs": 1885.8145,
+          "cls": 0,
+          "tbtMs": 0
+        },
+        {
+          "performance": 99,
+          "accessibility": 100,
+          "lcpMs": 1811.0450999999998,
+          "cls": 0,
+          "tbtMs": 0
+        },
+        {
+          "performance": 99,
+          "accessibility": 100,
+          "lcpMs": 1885.8062999999997,
+          "cls": 0,
+          "tbtMs": 0
+        }
+      ],
+      "median": {
+        "performance": 99,
+        "accessibility": 100,
+        "lcpMs": 1885.8062999999997,
+        "cls": 0,
+        "tbtMs": 0
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1512.8631,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1509.65265,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1514.0407500000001,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "lcpMs": 1512.8631,
+        "cls": 0.000110247526811016,
+        "tbtMs": 0
+      }
+    },
+    "atlas": {
+      "runs": [
+        {
+          "performance": 72,
+          "accessibility": 100,
+          "lcpMs": 1509.79785,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1862.999999999999
+        },
+        {
+          "performance": 72,
+          "accessibility": 100,
+          "lcpMs": 2110.5835,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1445.0000000000005
+        },
+        {
+          "performance": 73,
+          "accessibility": 100,
+          "lcpMs": 2108.8931,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1302.5
+        }
+      ],
+      "median": {
+        "performance": 72,
+        "accessibility": 100,
+        "lcpMs": 2108.8931,
+        "cls": 0.000110247526811016,
+        "tbtMs": 1445.0000000000005
+      }
+    }
+  },
+  "staticBefore": {
+    "commit": "08b84a8058f12510318ef47c009124555c5e0a22",
+    "htmlFiles": 121,
+    "searchBytes": 805642,
+    "catalogBytes": 183079,
+    "placesBytes": 2734,
+    "pages": {
+      "articles": {
+        "bytes": 9587,
+        "gzipBytes": 3496
+      },
+      "people": {
+        "bytes": 13430,
+        "gzipBytes": 4235
+      },
+      "timeline": {
+        "bytes": 22319,
+        "gzipBytes": 6485
+      },
+      "collection": {
+        "bytes": 15089,
+        "gzipBytes": 4432
+      },
+      "library": {
+        "bytes": 46468,
+        "gzipBytes": 12441
+      },
+      "search": {
+        "bytes": 9180,
+        "gzipBytes": 3873
+      }
+    }
+  },
+  "staticAfter": {
+    "htmlFiles": 204,
+    "searchBytes": 961737,
+    "catalogBytes": 493769,
+    "placesBytes": 4635,
+    "pages": {
+      "home": {
+        "bytes": 51138,
+        "gzipBytes": 12964
+      },
+      "articles": {
+        "bytes": 11865,
+        "gzipBytes": 4121
+      },
+      "people": {
+        "bytes": 16261,
+        "gzipBytes": 4975
+      },
+      "timeline": {
+        "bytes": 37707,
+        "gzipBytes": 9542
+      },
+      "collection": {
+        "bytes": 29153,
+        "gzipBytes": 6304
+      },
+      "library": {
+        "bytes": 78199,
+        "gzipBytes": 20175
+      },
+      "search": {
+        "bytes": 9179,
+        "gzipBytes": 3924
+      },
+      "articles/punic-wars": {
+        "bytes": 57246,
+        "gzipBytes": 15331
+      },
+      "atlas": {
+        "bytes": 42697,
+        "gzipBytes": 10570
+      }
+    }
+  },
+  "additionalStudy": {
+    "runs": 1,
+    "path": "/articles/punic-wars/",
+    "performance": 99.0,
+    "accessibility": 100,
+    "lcpMs": 1677.82485,
+    "cls": 0.000110247526811016,
+    "tbtMs": 0
+  },
+  "limits": [
+    "Laboratory measurements, not field INP or physical iPhone testing.",
+    "Atlas uses software SwiftShader, remains below Lighthouse 90.",
+    "Index size is all Pagefind files combined; queries load fragments, not the whole directory."
+  ]
+}
