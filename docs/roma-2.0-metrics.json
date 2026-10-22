@@ -265,17 +265,17 @@
   },
   "staticAfter": {
     "htmlFiles": 204,
-    "searchBytes": 961737,
-    "catalogBytes": 493769,
+    "searchBytes": 961729,
+    "catalogBytes": 493721,
     "placesBytes": 4635,
     "pages": {
       "home": {
-        "bytes": 51138,
-        "gzipBytes": 12964
+        "bytes": 50754,
+        "gzipBytes": 12959
       },
       "articles": {
-        "bytes": 11865,
-        "gzipBytes": 4121
+        "bytes": 11817,
+        "gzipBytes": 4108
       },
       "people": {
         "bytes": 16261,
@@ -290,20 +290,20 @@
         "gzipBytes": 6304
       },
       "library": {
-        "bytes": 78199,
-        "gzipBytes": 20175
+        "bytes": 78151,
+        "gzipBytes": 20161
       },
       "search": {
         "bytes": 9179,
         "gzipBytes": 3924
       },
       "articles/punic-wars": {
-        "bytes": 57246,
-        "gzipBytes": 15331
+        "bytes": 57054,
+        "gzipBytes": 15315
       },
       "atlas": {
-        "bytes": 42697,
-        "gzipBytes": 10570
+        "bytes": 42315,
+        "gzipBytes": 10569
       }
     }
   },
@@ -312,7 +312,7 @@
     "path": "/articles/punic-wars/",
     "performance": 99.0,
     "accessibility": 100,
-    "lcpMs": 1677.82485,
+    "lcpMs": 1664.4265499999997,
     "cls": 0.000110247526811016,
     "tbtMs": 0
   },

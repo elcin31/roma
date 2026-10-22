@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-const study='Пунические войны: как Рим стал средиземноморской державой';
+const study='Пунические войны: Рим и Карфаген';
 test('Punic study → Hannibal → Cannae → Carthage → atlas → museum → saved study',async({page})=>{
  test.setTimeout(70000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/articles/punic-wars/');await expect(page.getByRole('heading',{level:1})).toHaveText(study);
