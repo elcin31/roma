@@ -1,0 +1,4 @@
+---
+interface Props {items:{label:string;href?:string}[];}
+---
+<nav class="breadcrumbs" aria-label="Хлебные крошки" data-pagefind-ignore><a href="/">ROMA</a>{Astro.props.items.map(i=><><span aria-hidden="true">/</span>{i.href?<a href={i.href}>{i.label}</a>:<span aria-current="page">{i.label}</span>}</>)}</nav>

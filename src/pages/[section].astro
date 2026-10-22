@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Entry from '../components/Entry.astro';
+import {entities,ofKind,chronological} from '../lib/catalog';
+import {entityUrl,formatDate,type Entity} from '../lib/schema';
+export function getStaticPaths(){return ['history','people','army','society','collection','sources','timeline','places','articles','events','dynasties','datasets','battles','provinces'].map(section=>({params:{section}}));}
+const section=Astro.params.section!;
+const config:Record<string,{title:string;latin:string;description:string;items:Entity[]}>= {
+ history:{title:'История Рима',latin:'TEMPORA ROMANA',description:'От города на Тибре до средиземноморской державы. Пять эпох, между которыми история не останавливалась.',items:ofKind('period')},
+ people:{title:'Личности',latin:'VITAE',description:'Биографии людей, чьи решения, связи и представления о мире оставили след в истории.',items:chronological(ofKind('person'))},
+ army:{title:'Войны и армия',latin:'RES MILITARIS',description:'Армия как часть общества: набор, снабжение, командование и политические последствия войны.',items:entities.filter(e=>e.id==='legions'||e.kind==='battle'||['gallic-war','civil-war','actium','carthage-146'].includes(e.id))},
+ society:{title:'Общество',latin:'VITA ROMANA',description:'Институты, дом, труд и право. Римский образ жизни менялся вместе с эпохой, местом и общественным положением.',items:entities.filter(e=>['constitution','roman-home','justinian-law','met-248132','met-256570'].includes(e.id))},
+ collection:{title:'Музейная коллекция',latin:'RERUM MEMORIA',description:'Подлинные предметы из открытого собрания Metropolitan Museum. У каждого — собственная история, датировка и музейная запись.',items:ofKind('object')},
+ sources:{title:'Источники и исследования',latin:'AD FONTES',description:'Различайте слова участника, рассказ потомка и современное исследование. У каждого свидетельства есть автор, время и пределы.',items:ofKind('source')},
+ timeline:{title:'Хронология',latin:'ANNI ET RES GESTAE',description:'События в их последовательности — от традиционного основания города до падения Константинополя. Даты до нашей эры идут без нулевого года.',items:chronological([...ofKind('event'),...ofKind('battle')])},
+ places:{title:'Города Римского мира',latin:'LOCA ANTIQUA',description:'Древние названия, современные места и научные координаты Pleiades. От каждого города можно перейти в интерактивный атлас.',items:ofKind('place')},
+ articles:{title:'Исследования',latin:'HISTORIA',description:'Развёрнутые материалы о власти, повседневности и наследии Рима. Ссылки на свидетельства сопровождают изложение.',items:ofKind('article')},
+ events:{title:'События',latin:'RES GESTAE',description:'Датированные записи с источниками и связями с личностями, местами и исследованиями.',items:chronological(ofKind('event'))},
+ dynasties:{title:'Династии',latin:'DOMUS IMPERATORIA',description:'Родство, браки и усыновления в политической истории Римского мира.',items:ofKind('dynasty')},
+ datasets:{title:'Географические данные',latin:'ORBIS TERRARUM',description:'Происхождение, датировка и условия использования исторических картографических слоёв.',items:ofKind('dataset')},
+ battles:{title:'Сражения',latin:'PROELIA',description:'Отдельные военные события: место, участники, последовательность и ограничения источников.',items:ofKind('battle')},
+ provinces:{title:'Провинции',latin:'PROVINCIAE',description:'Административная география римского государства: датировка и источники реконструкции.',items:ofKind('province')},
+};
+const c=config[section];const isTimeline=section==='timeline';const filters=section==='people'||isTimeline?ofKind('period').map(p=>({id:p.id,title:p.title})):section==='collection'?[...new Set(c.items.flatMap(e=>e.tags))].map(t=>({id:t,title:t})):section==='sources'?[{id:'primary',title:'Античные свидетельства'},{id:'research',title:'Исследования'},{id:'geodata',title:'Геоданные'}]:[];
+---
+<Base title={c.title} description={c.description}><Breadcrumbs items={[{label:c.title}]}/><div class="page-intro"><span class="eyebrow">{c.latin}</span><h1>{c.title}</h1><p>{c.description}</p></div>
+{filters.length>0&&<div class="filters" aria-label="Фильтр каталога"><button class="filter" data-filter="all" aria-pressed="true">Все</button>{filters.map(f=><button class="filter" data-filter={f.id} aria-pressed="false">{f.title}</button>)}</div>}
+<p class="directory-count" role="status"><span id="visible-count">{c.items.length}</span> {section==='articles'?'исследований':'записей'} · опубликованная коллекция</p>
+<div class:list={[isTimeline?'timeline-list':section==='collection'?'object-grid':'index-grid']}>
+{c.items.map((e,i)=><div data-directory-entry data-groups={[...e.periodIds,...e.tags,e.sourceType||''].join('|')}>{isTimeline?<a href={entityUrl(e)} class="timeline-item"><time>{formatDate(e.date)}</time><div><h3>{e.title}</h3><p>{e.summary}</p></div></a>:<Entry entity={e} image={section==='collection'} number={section==='history'?i+1:undefined}/>}</div>)}
+</div>
+{section==='army'&&<div class="notice">Военная карта показывает города, связанные с событиями, с указанием их дат. Неподтверждённые маршруты армий не нанесены. <a href="/atlas/">Перейти в атлас →</a></div>}
+{section==='history'&&<div class="notice">Периодизация условна: история Восточной империи перекрывается с поздней Античностью. 476 год относится к западному императорскому двору.</div>}
+{section==='provinces'&&<div class="notice">Набор AWMC содержит линии провинциальных границ около 200 года без надёжных названий полигонов. Они доступны в <a href="/atlas/">атласе</a>; отдельные неподтверждённые административные записи не публикуются.</div>}
+<script>
+ const buttons=document.querySelectorAll<HTMLButtonElement>('[data-filter]');const entries=document.querySelectorAll<HTMLElement>('[data-directory-entry]');
+ function apply(value:string){let count=0;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===value)));entries.forEach(el=>{el.hidden=value!=='all'&&!el.dataset.groups?.split('|').includes(value);if(!el.hidden)count++});const counter=document.querySelector('#visible-count');if(counter)counter.textContent=String(count)}
+ buttons.forEach(b=>b.addEventListener('click',()=>{apply(b.dataset.filter!);const u=new URL(location.href);if(b.dataset.filter==='all')u.searchParams.delete('theme');else u.searchParams.set('theme',b.dataset.filter!);history.replaceState(null,'',u)}));const initial=new URLSearchParams(location.search).get('theme');if(initial&&[...buttons].some(b=>b.dataset.filter===initial))apply(initial);
+</script>
+</Base>

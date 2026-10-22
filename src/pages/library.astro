@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import {entities} from '../lib/catalog';
+import {entityUrl,kindLabels} from '../lib/schema';
+const catalog=entities.map(e=>({id:e.id,title:e.title,summary:e.summary,url:entityUrl(e),kind:kindLabels[e.kind]}));
+---
+<Base title="Моя библиотека" noIndex><Breadcrumbs items={[{label:'Моя библиотека'}]}/><div class="page-intro"><span class="eyebrow">BIBLIOTHECA MEA</span><h1>Моя библиотека</h1><p>Материалы, к которым хочется вернуться. Закладки сохраняются только в этом браузере, без регистрации.</p></div><p id="library-status" role="status" class="directory-count"></p><div id="library-items"></div><div class="empty-state" id="library-empty"><h2>Здесь начинается ваша коллекция</h2><p>Нажмите «В мою библиотеку» на странице статьи, личности или музейного предмета. После очистки данных браузера закладки исчезнут.</p><a class="text-link" href="/articles/">Выбрать первое исследование →</a></div><script id="library-catalog" type="application/json" set:html={JSON.stringify(catalog).replace(/</g,'\u003c')}/><noscript><p class="notice">Для сохранения и отображения закладок включите JavaScript.</p></noscript>
+<script>
+ import {readSaved,writeSaved} from '../lib/storage';
+ type Item={id:string;title:string;summary:string;url:string;kind:string};const data=JSON.parse(document.querySelector('#library-catalog')!.textContent!) as Item[];const catalog=new Map(data.map(x=>[x.id,x]));const container=document.querySelector('#library-items')!;const empty=document.querySelector<HTMLElement>('#library-empty')!;const status=document.querySelector('#library-status')!;
+ function render(){const {ids,available}=readSaved();const items=ids.map(id=>catalog.get(id)).filter((x):x is Item=>!!x);container.replaceChildren();empty.hidden=items.length>0;status.textContent=!available?'Хранилище браузера недоступно. Разрешите сохранение данных, чтобы пользоваться закладками.':items.length?`Сохранено материалов: ${items.length}`:'Пока нет сохранённых материалов.';
+ for(const item of items){const row=document.createElement('div');row.className='library-row';const a=document.createElement('a');a.href=item.url;a.className='entry';const meta=document.createElement('div');meta.className='entry-meta';meta.textContent=item.kind;const title=document.createElement('h3');title.textContent=item.title;const p=document.createElement('p');p.textContent=item.summary;a.append(meta,title,p);const remove=document.createElement('button');remove.className='library-remove';remove.textContent='Удалить';remove.setAttribute('aria-label',`Удалить: ${item.title}`);remove.addEventListener('click',()=>{const current=readSaved().ids;if(writeSaved(current.filter(id=>id!==item.id))){render();const next=container.querySelector<HTMLAnchorElement>('a');if(next)next.focus();else document.querySelector<HTMLAnchorElement>('#library-empty a')?.focus()}else status.textContent='Не удалось изменить закладки: хранилище недоступно.'});row.append(a,remove);container.append(row)}}render();window.addEventListener('storage',render);
+</script>
+</Base>

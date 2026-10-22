@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Atlas from '../components/Atlas';
+import {atlasPlaces} from '../lib/atlas-data';
+---
+<Base title="Исторический атлас" wide><div class="wrap atlas-page"><Breadcrumbs items={[{label:'Исторический атлас'}]}/><div class="atlas-page-heading"><h1>Атлас Римского мира</h1><p>Пространство истории · три датированных среза</p></div><Atlas places={atlasPlaces} client:load/><noscript><div class="notice">Для управления картой требуется JavaScript. <a href="/places/">Открыть справочник мест</a>.</div></noscript><div class="notice">Показаны реконструкции AWMC на 60 год до н. э., 117 и 200 годы н. э. Между ними нет интерполяции. Города, культурные объекты и военные события — отдельные слои с собственной датировкой. <a href="/credits/">Происхождение и ограничения данных →</a></div></div></Base>
