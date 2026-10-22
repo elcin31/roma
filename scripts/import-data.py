@@ -45,5 +45,7 @@ for id in ids:
  a=json.loads(retrieve('met-'+str(id),url))
  assert a['isPublicDomain'] and a['primaryImage']
  metadata.append({**a,'apiURL':url,'retrieved':'2026-10-22','imageLicense':'CC0 1.0'})
-(ROOT/'src/data/museum-records.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
+for target in ['src/data/museum-records.json','public/data/museum-records.json']:
+ (ROOT/target).parent.mkdir(parents=True,exist_ok=True)
+ (ROOT/target).write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
 print('Imported',len(manifest),'datasets and',len(metadata),'museum records')

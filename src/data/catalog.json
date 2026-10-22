@@ -121,7 +121,7 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "https://classics.mit.edu/Caesar/gallic.html"
+        "https://www.gutenberg.org/cache/epub/10657/pg10657.txt"
       ]
     },
     "sourceIds": [],
@@ -130,13 +130,13 @@
     "sections": [
       {
         "title": "Как читать этот источник",
-        "text": "Книга VII, 68–90: Алезия. Английский перевод W. A. McDevitte и W. S. Bohn; MIT Internet Classics Archive.",
+        "text": "Книга VII, 68–90: Алезия. Английский перевод W. A. McDevitte и W. S. Bohn, The Commentaries of Caesar; Project Gutenberg, ebook 10657. Полный текст проверен; копия VII книги на MIT обрывается раньше рассказа об осаде.",
         "sourceIds": [
           "caesar-source"
         ]
       }
     ],
-    "url": "https://classics.mit.edu/Caesar/gallic.html",
+    "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.txt",
     "sourceType": "primary"
   },
   {
@@ -621,7 +621,10 @@
       "constitution",
       "roma",
       "gallic-war",
-      "caesar-assassination"
+      "caesar-assassination",
+      "alesia-52",
+      "vercingetorix",
+      "alesia"
     ],
     "periodIds": [
       "republic"
@@ -673,13 +676,15 @@
       "evidence": [
         "suetonius",
         "res-gestae",
-        "met-empire"
+        "met-empire",
+        "dir-augustus"
       ]
     },
     "sourceIds": [
       "suetonius",
       "res-gestae",
-      "met-empire"
+      "met-empire",
+      "dir-augustus"
     ],
     "relatedIds": [
       "caesar",
@@ -702,7 +707,8 @@
         "sourceIds": [
           "suetonius",
           "res-gestae",
-          "met-empire"
+          "met-empire",
+          "dir-augustus"
         ]
       },
       {
@@ -711,7 +717,8 @@
         "sourceIds": [
           "suetonius",
           "res-gestae",
-          "met-empire"
+          "met-empire",
+          "dir-augustus"
         ]
       }
     ],
@@ -742,11 +749,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "suetonius"
+        "suetonius",
+        "dir-livia"
       ]
     },
     "sourceIds": [
-      "suetonius"
+      "suetonius",
+      "dir-livia"
     ],
     "relatedIds": [
       "augustus",
@@ -762,14 +771,16 @@
         "title": "Семья как политическая связь",
         "text": "Ливия вышла замуж за Октавиана в 38 году до н. э. после брака с Тиберием Клавдием Нероном. Её сыновья Тиберий и Друз принадлежали к семье Клавдиев. Союз включил их в политическое окружение Августа, не создавая простого и неизменного порядка наследования.",
         "sourceIds": [
-          "suetonius"
+          "suetonius",
+          "dir-livia"
         ]
       },
       {
         "title": "Влияние и пределы свидетельств",
         "text": "У женщин императорского дома не было консульской или трибунской власти, однако родство, покровительство и публичные почести давали им влияние. Античные рассказы о придворных интригах нельзя принимать за доказанные обвинения. После смерти Августа Ливия получила имя Юлия Августа по его завещанию.",
         "sourceIds": [
-          "suetonius"
+          "suetonius",
+          "dir-livia"
         ]
       }
     ],
@@ -798,12 +809,14 @@
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
         "met-empire",
-        "suetonius"
+        "suetonius",
+        "dir-tiberius"
       ]
     },
     "sourceIds": [
       "met-empire",
-      "suetonius"
+      "suetonius",
+      "dir-tiberius"
     ],
     "relatedIds": [
       "augustus",
@@ -820,7 +833,8 @@
         "text": "Тиберий был сыном Ливии от её первого брака. Август усыновил его в 4 году н. э. В 14 году после смерти Августа Тиберий возглавил государство. Сочетание усыновления, командного опыта и накопленных полномочий оказалось важнее какого-либо единого закона о наследовании престола.",
         "sourceIds": [
           "met-empire",
-          "suetonius"
+          "suetonius",
+          "dir-tiberius"
         ]
       },
       {
@@ -828,7 +842,8 @@
         "text": "В 14–37 годах продолжали действовать сенат и прежние должности, но военное командование и верховная инициатива оставались за императором. Сенаторская историография воспринимала напряжение между двором и аристократией особенно остро; её оценки не заменяют историю провинций и повседневного управления.",
         "sourceIds": [
           "met-empire",
-          "suetonius"
+          "suetonius",
+          "dir-tiberius"
         ]
       }
     ],
@@ -856,11 +871,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-nero"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-nero"
     ],
     "relatedIds": [
       "julio-claudians",
@@ -875,14 +892,16 @@
         "title": "Император и аристократия",
         "text": "Нерон правил с 54 года. Художественное покровительство и публичные выступления были частью его образа, но отношения с верхушкой общества становились всё более конфликтными. Восстания и утрата поддержки войск лишили его возможности удерживать власть.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-nero"
         ]
       },
       {
         "title": "После династии",
         "text": "Самоубийство Нерона в 68 году не отменило императорскую систему. Борьба между претендентами показала, насколько важны провинциальные армии. В 69 году победу одержал Веспасиан, основавший новую династию.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-nero"
         ]
       }
     ],
@@ -910,11 +929,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-vespasian"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-vespasian"
     ],
     "relatedIds": [
       "nero",
@@ -929,14 +950,16 @@
         "title": "Новая династия",
         "text": "Победа Веспасиана в 69 году завершила борьбу нескольких претендентов. Его положение основывалось на поддержке армии, но восстановление управления требовало отношений с сенатом, городами и провинциальными элитами.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-vespasian"
         ]
       },
       {
         "title": "Империя и город",
         "text": "Флавии поддерживали предоставление гражданства и развитие городов провинций. Монументальное строительство в Риме представляло победы и устойчивость нового дома. Наследование Титом, а затем Домицианом придало власти явный семейный характер.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-vespasian"
         ]
       }
     ],
@@ -964,11 +987,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-trajan"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-trajan"
     ],
     "relatedIds": [
       "hadrian",
@@ -984,14 +1009,16 @@
         "title": "Военная экспансия",
         "text": "Траян стал императором в 98 году после усыновления Нервой. Дакийские и парфянские походы расширили пространство империи. Срез атласа на 117 год отражает реконструкцию максимального охвата, но не превращает недавно занятые земли в устойчиво управляемые провинции.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-trajan"
         ]
       },
       {
         "title": "Имперская элита",
         "text": "Происхождение семьи из Испании показывает включение провинциальных элит в центр власти. Строительство, городские пожертвования и торговля связывали императорское покровительство с деятельностью местной знати. После смерти Траяна часть восточных завоеваний была оставлена.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-trajan"
         ]
       }
     ],
@@ -1019,11 +1046,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-hadrian"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-hadrian"
     ],
     "relatedIds": [
       "trajan",
@@ -1038,14 +1067,16 @@
         "title": "После завоеваний",
         "text": "Адриан правил с 117 по 138 год. Смена правителя обозначила пересмотр части восточных завоеваний и внимание к устойчивости границ. Империя оставалась военной державой, но расширение территории не было единственной формой её политики.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-hadrian"
         ]
       },
       {
         "title": "Города и культура",
         "text": "При Траяне и Адриане основывались города и осуществлялись крупные строительные программы. Греческая культура занимала значительное место в жизни имперской элиты. Этот интерес не устранял неравенство между правителями и подданными или насилие имперской власти.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-hadrian"
         ]
       }
     ],
@@ -1073,11 +1104,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-marcus-aurelius"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-marcus-aurelius"
     ],
     "relatedIds": [
       "hadrian",
@@ -1091,14 +1124,16 @@
         "title": "Совместное правление",
         "text": "В 161 году после смерти Антонина Пия Марк Аврелий разделил императорские полномочия с Луцием Вером. Это важный пример того, что верховная власть могла принадлежать двум правителям без формального разделения государства на независимые страны.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-marcus-aurelius"
         ]
       },
       {
         "title": "Война и преемство",
         "text": "Продолжительные войны на северных рубежах требовали больших расходов. Передача власти сыну Коммоду показывает ограниченность схемы, по которой II век будто бы представлял собой исключительно выбор самых достойных. Семейный принцип не исчезал.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-marcus-aurelius"
         ]
       }
     ],
@@ -1127,11 +1162,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-diocletian"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-diocletian"
     ],
     "relatedIds": [
       "constantine",
@@ -1146,14 +1183,23 @@
         "title": "Распределение власти",
         "text": "В 284 году Диоклетиан пришёл к власти после череды военных кризисов. В 293 году сложилась тетрархия: два августа и два цезаря распределяли обязанности и военное командование. Это не было учреждением четырёх независимых государств.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-diocletian"
         ]
       },
       {
         "title": "Реформы и наследование",
         "text": "Дробление провинций и разграничение функций усиливали управленческую сеть. Отречение Диоклетиана и Максимиана в 305 году должно было обеспечить смену поколений, но борьба преемников обнаружила слабость порядка, который не мог устранить династические притязания.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-diocletian"
+        ]
+      },
+      {
+        "title": "Спорная хронология жизни",
+        "text": "В статье Ральфа Матисена указаны рождение около 236/237 года и смерть 3 декабря 316 года. В справочной литературе встречаются и другие датировки. Поэтому в заголовке приведены надёжные годы правления, а спорные даты жизни не представлены как установленные.",
+        "sourceIds": [
+          "dir-diocletian"
         ]
       }
     ],
@@ -1162,9 +1208,10 @@
       "Gaius Aurelius Valerius Diocletianus"
     ],
     "date": {
-      "year": 244,
-      "endYear": 311,
-      "approximate": true
+      "year": 236,
+      "endYear": 316,
+      "approximate": true,
+      "label": "Даты жизни спорны · правление 284–305 н. э."
     },
     "roles": [
       "Император, 284–305"
@@ -1181,11 +1228,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "met-empire"
+        "met-empire",
+        "dir-constantine"
       ]
     },
     "sourceIds": [
-      "met-empire"
+      "met-empire",
+      "dir-constantine"
     ],
     "relatedIds": [
       "diocletian",
@@ -1201,14 +1250,16 @@
         "title": "Борьба за единовластие",
         "text": "Константин был сыном Констанция Хлора. Серия конфликтов с соперниками завершилась в 324 году победой над Лицинием и объединением власти. Поэтому политическую историю после Диоклетиана следует понимать как борьбу за империю, а не простое исполнение установленной схемы преемства.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-constantine"
         ]
       },
       {
         "title": "Новый центр",
         "text": "В 330 году состоялось посвящение Константинополя на месте Византия. Город занял стратегическое положение между Балканами и Малой Азией. Покровительство христианству стало важнейшим изменением императорской религиозной политики, хотя христианизация общества оставалась длительным процессом.",
         "sourceIds": [
-          "met-empire"
+          "met-empire",
+          "dir-constantine"
         ]
       }
     ],
@@ -1219,7 +1270,8 @@
     "date": {
       "year": 272,
       "endYear": 337,
-      "approximate": true
+      "approximate": true,
+      "label": "Около 271–273 — 337 н. э."
     },
     "roles": [
       "Император, 306–337"
@@ -1236,11 +1288,13 @@
       "date": "2026-10-22",
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
-        "institutes"
+        "institutes",
+        "dir-justinian"
       ]
     },
     "sourceIds": [
-      "institutes"
+      "institutes",
+      "dir-justinian"
     ],
     "relatedIds": [
       "justinian-law",
@@ -1255,14 +1309,16 @@
         "title": "Император и право",
         "text": "По распоряжению Юстиниана юристы под руководством Трибониана подготовили своды императорских конституций и извлечений из сочинений правоведов. Дигесты и Институции вышли в 533 году. Переработанный Кодекс последовал в 534 году; позднейшие постановления известны как Новеллы.",
         "sourceIds": [
-          "institutes"
+          "institutes",
+          "dir-justinian"
         ]
       },
       {
         "title": "Читать нормативный текст",
         "text": "Институции предназначались для обучения, но обладали юридической силой. В них соседствуют определения справедливости, различение свободных и рабов, правила собственности и семейной власти. Свод сохранял древние конструкции и одновременно перерабатывал их для государства VI века.",
         "sourceIds": [
-          "institutes"
+          "institutes",
+          "dir-justinian"
         ]
       }
     ],
@@ -1869,13 +1925,14 @@
     "material": "Мрамор",
     "dimensions": "12in. (30.5cm)",
     "provenance": "Rogers Fund, 1907",
-    "objectDate": "ca. 14–37 CE",
+    "objectDate": "Около 14–37 н. э.",
     "date": {
       "year": 14,
       "endYear": 37,
       "approximate": true
     },
-    "subtitle": "Marble portrait of the emperor Augustus"
+    "subtitle": "Marble portrait of the emperor Augustus",
+    "findspot": "Место находки не уточнено в использованной записи API. См. полный музейный каталог."
   },
   {
     "id": "met-248132",
@@ -1915,13 +1972,14 @@
     "material": "Мрамор",
     "dimensions": "H. 49 5/8 in. (125.98 cm)",
     "provenance": "Rogers Fund, 1909",
-    "objectDate": "14–68 CE",
+    "objectDate": "14–68 н. э.",
     "date": {
       "year": 14,
       "endYear": 68,
       "approximate": true
     },
-    "subtitle": "Marble statue of an old woman"
+    "subtitle": "Marble statue of an old woman",
+    "findspot": "Место находки не уточнено в использованной записи API. См. полный музейный каталог."
   },
   {
     "id": "met-247117",
@@ -1962,13 +2020,14 @@
     "material": "Бронза",
     "dimensions": "H. 95 in. (241.3 cm)",
     "provenance": "Rogers Fund, 1905",
-    "objectDate": "251–253 CE",
+    "objectDate": "251–253 н. э.",
     "date": {
       "year": 251,
       "endYear": 253,
       "approximate": true
     },
-    "subtitle": "Bronze statue of the emperor Trebonianus Gallus"
+    "subtitle": "Bronze statue of the emperor Trebonianus Gallus",
+    "findspot": "Место находки не уточнено в использованной записи API. См. полный музейный каталог."
   },
   {
     "id": "met-256570",
@@ -2008,13 +2067,14 @@
     "material": "Бронза",
     "dimensions": "Overall: 14 x 11 5/8 x 1 3/4 in. (35.6 x 29.5 x 4.4 cm)",
     "provenance": "Gift of Mr. and Mrs. Klaus G. Perls, 1997",
-    "objectDate": "mid-2nd–early 3rd century CE",
+    "objectDate": "Середина II — начало III века н. э.",
     "date": {
       "year": 130,
       "endYear": 220,
       "approximate": true
     },
-    "subtitle": "Bronze plaque of Mithras slaying the bull"
+    "subtitle": "Bronze plaque of Mithras slaying the bull",
+    "findspot": "Место находки не уточнено в использованной записи API. См. полный музейный каталог."
   },
   {
     "id": "met-249180",
@@ -2055,13 +2115,14 @@
     "material": "Слоновая кость",
     "dimensions": "Overall: 1 1/2 x 2 7/8 x 1 1/8 in. (3.8 x 7.3 x 2.9 cm)",
     "provenance": "Gift of J. Pierpont Morgan, 1917",
-    "objectDate": "3rd–4th century CE",
+    "objectDate": "III–IV века н. э.",
     "date": {
       "year": 200,
       "endYear": 399,
       "approximate": true
     },
-    "subtitle": "Ivory statuette of a reclining woman"
+    "subtitle": "Ivory statuette of a reclining woman",
+    "findspot": "Место находки не уточнено в использованной записи API. См. полный музейный каталог."
   },
   {
     "id": "met-250945",
@@ -2103,13 +2164,14 @@
     "material": "Фреска",
     "dimensions": "H. 62 3/4 in. (159.39 cm.)\r\nwidth 46 3/4 in. (118.75 cm.)",
     "provenance": "Rogers Fund, 1920",
-    "objectDate": "last decade of the 1st century BCE",
+    "objectDate": "Последнее десятилетие I века до н. э.",
     "date": {
       "year": -10,
       "endYear": -1,
       "approximate": true
     },
-    "subtitle": "Wall painting: Perseus and Andromeda in landscape, from the imperial villa at Boscotrecase"
+    "subtitle": "Wall painting: Perseus and Andromeda in landscape, from the imperial villa at Boscotrecase",
+    "findspot": "Императорская вилла, Боскотреказе, Италия"
   },
   {
     "id": "met-247008",
@@ -2151,13 +2213,14 @@
     "material": "Фреска",
     "dimensions": "Overall: 77 x 107in. (195.6 x 271.8cm)",
     "provenance": "Rogers Fund, 1903",
-    "objectDate": "ca. 50–40 BCE",
+    "objectDate": "Около 50–40 до н. э.",
     "date": {
       "year": -50,
       "endYear": -40,
       "approximate": true
     },
-    "subtitle": "Wall painting from the west wall of Room L of the Villa of P. Fannius Synistor at Boscoreale"
+    "subtitle": "Wall painting from the west wall of Room L of the Villa of P. Fannius Synistor at Boscoreale",
+    "findspot": "Вилла Публия Фанния Синистора, Боскореале, Италия"
   },
   {
     "id": "met-247011",
@@ -2199,13 +2262,14 @@
     "material": "Фреска",
     "dimensions": "Overall: 70 x 40 1/4in. (177.8 x 102.2cm)",
     "provenance": "Rogers Fund, 1903",
-    "objectDate": "ca. 50–40 BCE",
+    "objectDate": "Около 50–40 до н. э.",
     "date": {
       "year": -50,
       "endYear": -40,
       "approximate": true
     },
-    "subtitle": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale"
+    "subtitle": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale",
+    "findspot": "Вилла Публия Фанния Синистора, Боскореале, Италия"
   },
   {
     "id": "foundation-753",
@@ -3422,12 +3486,14 @@
       "scope": "Первичная редакционная сверка указанных фактов с доступными текстами и каталогами. Не независимое научное рецензирование.",
       "evidence": [
         "institutes",
-        "met-empire"
+        "met-empire",
+        "dir-justinian"
       ]
     },
     "sourceIds": [
       "institutes",
-      "met-empire"
+      "met-empire",
+      "dir-justinian"
     ],
     "relatedIds": [
       "justinian",
@@ -3481,7 +3547,7 @@
     "id": "pleiades-dataset",
     "kind": "dataset",
     "title": "Города Pleiades",
-    "summary": "Десять проверенных записей городов со стабильными идентификаторами, представительными координатами и ссылками на научный справочник.",
+    "summary": "Проверенные записи городов и поселений со стабильными идентификаторами, представительными координатами и ссылками на научный справочник.",
     "status": "verified",
     "review": {
       "date": "2026-10-22",
@@ -3540,5 +3606,493 @@
     "license": "Public domain",
     "version": "2026-10-22",
     "attribution": "natural-earth"
+  },
+  {
+    "id": "dir-augustus",
+    "kind": "source",
+    "title": "Garrett G. Fagan: Октавиан Август",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/auggie.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Garrett G. Fagan. Октавиан Август. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-augustus"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/auggie.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-livia",
+    "kind": "source",
+    "title": "Donna Hurley: Ливия Друзилла",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/livia.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Donna Hurley. Ливия Друзилла. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-livia"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/livia.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-tiberius",
+    "kind": "source",
+    "title": "Garrett G. Fagan: Тиберий",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/tiberius.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Garrett G. Fagan. Тиберий. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-tiberius"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/tiberius.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-nero",
+    "kind": "source",
+    "title": "Herbert W. Benario: Нерон",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/nero.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Herbert W. Benario. Нерон. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-nero"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/nero.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-vespasian",
+    "kind": "source",
+    "title": "John Donahue: Веспасиан",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/vespasia.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "John Donahue. Веспасиан. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-vespasian"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/vespasia.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-trajan",
+    "kind": "source",
+    "title": "Herbert W. Benario: Траян",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/trajan.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Herbert W. Benario. Траян. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-trajan"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/trajan.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-hadrian",
+    "kind": "source",
+    "title": "Herbert W. Benario: Адриан",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/hadrian.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Herbert W. Benario. Адриан. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-hadrian"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/hadrian.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-marcus-aurelius",
+    "kind": "source",
+    "title": "Herbert W. Benario: Марк Аврелий",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/marcaur.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Herbert W. Benario. Марк Аврелий. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-marcus-aurelius"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/marcaur.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-diocletian",
+    "kind": "source",
+    "title": "Ralph W. Mathisen: Диоклетиан",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/dioclet.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Ralph W. Mathisen. Диоклетиан. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-diocletian"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/dioclet.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-constantine",
+    "kind": "source",
+    "title": "Hans A. Pohlsander: Константин I",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/conniei.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "Hans A. Pohlsander. Константин I. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-constantine"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/conniei.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "dir-justinian",
+    "kind": "source",
+    "title": "James Allan Evans: Юстиниан I",
+    "summary": "Авторская статья научного справочника De Imperatoribus Romanis с обсуждением источников и библиографией. Использована для сверки биографической хронологии и семейных связей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "https://roman-emperors.sites.luc.edu/justinia.htm"
+      ]
+    },
+    "sourceIds": [],
+    "relatedIds": [],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Библиографическая запись",
+        "text": "James Allan Evans. Юстиниан I. De Imperatoribus Romanis: An Online Encyclopedia of Roman Rulers. Архив Loyola University Chicago. Текст доступен на английском; проверен 22 октября 2026 года.",
+        "sourceIds": [
+          "dir-justinian"
+        ]
+      }
+    ],
+    "url": "https://roman-emperors.sites.luc.edu/justinia.htm",
+    "sourceType": "research"
+  },
+  {
+    "id": "alesia",
+    "kind": "place",
+    "title": "Алезия",
+    "summary": "Галльский оппидум, у которого в 52 году до н. э. войска Цезаря осадили Верцингеторига. После завоевания здесь существовал галло-римский город.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "pleiades-source",
+        "caesar-source"
+      ]
+    },
+    "sourceIds": [
+      "pleiades-source",
+      "caesar-source"
+    ],
+    "relatedIds": [
+      "alesia-52",
+      "caesar",
+      "vercingetorix"
+    ],
+    "periodIds": [],
+    "sections": [
+      {
+        "title": "Поселение и осада",
+        "text": "Географическая запись Pleiades идентифицирует Алезию у современного Ализ-Сент-Рен. Точка позволяет ориентироваться на обзорной карте, но не заменяет изучения археологии осадных линий.",
+        "sourceIds": [
+          "pleiades-source",
+          "caesar-source"
+        ]
+      }
+    ],
+    "coordinates": [
+      4.503884,
+      47.536622
+    ],
+    "coordinateAccuracy": "Представительная точка древнего поселения. Не точный контур укреплений или позиции войск.",
+    "modernName": "Ализ-Сент-Рен, Франция",
+    "province": "Территория мандубиев, 52 до н. э.; позднее римская Галлия",
+    "pleiadesId": "177434",
+    "aliases": [
+      "Alesia",
+      "Alise-Sainte-Reine"
+    ],
+    "url": "https://pleiades.stoa.org/places/177434"
+  },
+  {
+    "id": "vercingetorix",
+    "kind": "person",
+    "title": "Верцингеториг",
+    "summary": "Арвернский предводитель, объединивший часть галльских общин в борьбе против Цезаря в 52 году до н. э. Его образ известен главным образом через источники победителей.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "caesar-source",
+        "plutarch"
+      ]
+    },
+    "sourceIds": [
+      "caesar-source",
+      "plutarch"
+    ],
+    "relatedIds": [
+      "caesar",
+      "alesia",
+      "alesia-52"
+    ],
+    "periodIds": [
+      "republic"
+    ],
+    "sections": [
+      {
+        "title": "Коалиция против Рима",
+        "text": "В VII книге Цезарь описывает, как Верцингеториг привлёк союзников и организовал сопротивление. Рассказ о дисциплине и жестоких наказаниях принадлежит противнику. Его следует читать как политически заинтересованное свидетельство, а не непосредственный доступ к взглядам галльского предводителя.",
+        "sourceIds": [
+          "caesar-source"
+        ]
+      },
+      {
+        "title": "Алезия и плен",
+        "text": "После осады Алезии Верцингеториг был выдан римлянам. У Цезаря сцена сдачи изложена кратко; позднейшие авторы придают ей более выразительную форму. Плутарх сообщает о казни пленника после триумфа Цезаря. Нельзя соединять все версии в один бесспорный рассказ о деталях.",
+        "sourceIds": [
+          "caesar-source",
+          "plutarch"
+        ]
+      }
+    ],
+    "subtitle": "Vercingetorix",
+    "aliases": [
+      "Vercingetorix"
+    ],
+    "date": {
+      "year": -52,
+      "label": "Деятельность: 52 до н. э.; казнь: 46 до н. э."
+    },
+    "roles": [
+      "Предводитель галльского восстания"
+    ],
+    "family": "Цезарь называет его сыном Кельтилла из племени арвернов. Другие подробности семьи в этом очерке не реконструируются."
+  },
+  {
+    "id": "alesia-52",
+    "kind": "battle",
+    "title": "Осада Алезии",
+    "summary": "Осада 52 года до н. э., в которой армия Цезаря удерживала укреплённый город и отбила попытки галльских сил деблокировать его. Сдача Верцингеторига стала переломом кампании.",
+    "status": "verified",
+    "review": {
+      "date": "2026-10-22",
+      "scope": "Первичная редакционная сверка с указанным доступным текстом; не независимое научное рецензирование.",
+      "evidence": [
+        "caesar-source",
+        "plutarch",
+        "pleiades-source"
+      ]
+    },
+    "sourceIds": [
+      "caesar-source",
+      "plutarch",
+      "pleiades-source"
+    ],
+    "relatedIds": [
+      "caesar",
+      "vercingetorix",
+      "alesia",
+      "gallic-war",
+      "legions"
+    ],
+    "periodIds": [
+      "republic"
+    ],
+    "sections": [
+      {
+        "title": "Контекст и место",
+        "text": "Верцингеториг отступил к Алезии после столкновения с римской армией. Цезарь описывает город на возвышенности и приступает к блокаде. Современная точка Pleiades обозначает поселение; положение отдельных лагерей и линий укреплений здесь не реконструируется.",
+        "sourceIds": [
+          "caesar-source",
+          "pleiades-source"
+        ]
+      },
+      {
+        "title": "Ход осады",
+        "text": "Римляне сооружали укрепления против осаждённых, затем также против ожидавшейся помощи извне. Войска деблокирования и защитники города предпринимали согласованные атаки. В рассказе Цезаря успех связан с выдержкой подразделений, резервами и его личным руководством. Такой акцент соответствует авторской самопрезентации.",
+        "sourceIds": [
+          "caesar-source"
+        ]
+      },
+      {
+        "title": "Исход и последствия",
+        "text": "После неудачи внешней помощи Верцингеториг сдался. Победа резко ослабила организованное сопротивление, но не означала мгновенного прекращения всех боевых действий в Галлии. Масштаб потерь и численность войск у античных авторов нельзя считать проверенной статистикой; в карточке эти числа намеренно не приводятся.",
+        "sourceIds": [
+          "caesar-source",
+          "plutarch"
+        ]
+      },
+      {
+        "title": "Основное свидетельство",
+        "text": "Главный связный рассказ — Цезарь, «Галльская война», VII.68–90. Автор сам командовал одной из сторон. Плутарх писал позднее и строил биографию вокруг характера полководца. Сопоставление жанров помогает отделять ход событий от литературной сцены.",
+        "sourceIds": [
+          "caesar-source",
+          "plutarch"
+        ]
+      }
+    ],
+    "date": {
+      "year": -52
+    },
+    "placeId": "alesia",
+    "commanders": [
+      "caesar",
+      "vercingetorix"
+    ],
+    "opponents": [
+      "Римская армия Цезаря",
+      "Галльские силы Верцингеторига и союзных общин"
+    ]
   }
 ]

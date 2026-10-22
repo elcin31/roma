@@ -28,7 +28,7 @@ export const entitySchema = baseSchema.extend({
   version: z.string().optional(), attribution: z.string().optional(),
   museum: z.string().optional(), accessionNumber: z.string().optional(),
   material: z.string().optional(), dimensions: z.string().optional(),
-  provenance: z.string().optional(), objectDate: z.string().optional(),
+  provenance: z.string().optional(), findspot: z.string().optional(), objectDate: z.string().optional(),
   sourceType: z.enum(['primary','research','catalogue','geodata']).optional(),
   roles: z.array(z.string()).optional(), family: z.string().optional(),
   commanders: z.array(z.string()).optional(), opponents: z.array(z.string()).optional(),

@@ -954,5 +954,68 @@
         "uri": "https://pleiades.stoa.org/author/ekansa"
       }
     ]
+  },
+  {
+    "id": "alesia",
+    "pleiadesId": "177434",
+    "url": "https://pleiades.stoa.org/places/177434",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "G.D. Woolf"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "rssmith",
+        "homepage": null,
+        "name": "R. Scott Smith",
+        "uri": "https://pleiades.stoa.org/author/rssmith"
+      },
+      {
+        "username": "ghawes",
+        "homepage": null,
+        "name": "Greta Hawes",
+        "uri": "https://pleiades.stoa.org/author/ghawes"
+      }
+    ]
   }
 ]
