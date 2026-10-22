@@ -1,6 +1,8 @@
 ---
+import MuseumImage from './MuseumImage.astro';
 import {entityUrl,formatDate,kindLabels,type Entity} from '../lib/schema';
-interface Props {entity:Entity;number?:number;image?:boolean;}
-const {entity,number,image=false}=Astro.props;
+interface Props {entity:Entity;number?:number;image?:boolean;headingLevel?:2|3;}
+const {entity,number,image=false,headingLevel=3}=Astro.props;
+const Heading=headingLevel===2?'h2':'h3';
 ---
-<a class:list={['entry',image&&'entry-image']} href={entityUrl(entity)}>{image&&entity.image&&<div class="entry-art"><img src={entity.image.replace('.webp','-small.webp')} alt={entity.title} width="600" height="700" loading="lazy"/></div>}<div class="entry-meta"><span>{number!==undefined?String(number).padStart(2,'0'):kindLabels[entity.kind]}</span><span>{entity.objectDate||formatDate(entity.date)}</span></div><h3>{entity.title}<span aria-hidden="true">→</span></h3><p>{entity.summary}</p></a>
+<a class:list={['entry',image&&'entry-image']} href={entityUrl(entity)}>{image&&entity.image&&<div class="entry-art"><MuseumImage src={entity.image} alt={entity.title} sizes="(max-width:767px) 90vw, 29vw"/></div>}<div class="entry-meta"><span>{number!==undefined?String(number).padStart(2,'0'):kindLabels[entity.kind]}</span><span>{entity.objectDate||formatDate(entity.date)}</span></div><Heading class="entry-title">{entity.title}<span aria-hidden="true">→</span></Heading><p>{entity.summary}</p></a>

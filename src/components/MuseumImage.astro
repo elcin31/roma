@@ -1,0 +1,17 @@
+---
+import metadata from '../data/image-metadata.json';
+interface Props {
+  src: string;
+  alt: string;
+  sizes: string;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+const {src,alt,sizes,loading='lazy',fetchpriority='auto'}=Astro.props;
+const images: Record<string,{width:number;height:number}>=metadata;
+const dimensions=images[src];
+if(!dimensions) throw new Error(`Missing museum image dimensions: ${src}`);
+const stem=src.replace(/(?:-small|-medium)?\.webp$/,'');
+const srcset=['-small','-medium',''].map(s=>`${stem}${s}.webp`).filter(p=>images[p]).sort((a,b)=>images[a].width-images[b].width).map(p=>`${p} ${images[p].width}w`).join(', ');
+---
+<img src={src} {srcset} {sizes} {alt} width={dimensions.width} height={dimensions.height} {loading} {fetchpriority} decoding="async"/>
