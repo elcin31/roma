@@ -4,6 +4,7 @@ import {allEntities,entities,byId,ofKind} from '../src/lib/catalog';
 import {chronologicalYear} from '../src/lib/schema';
 import records from '../src/data/museum-records.json';
 import manifest from '../public/geo/manifest.json';
+import imageMetadata from '../src/data/image-metadata.json';
 const allIds=new Set<string>();
 for(const e of allEntities){
  assert(!allIds.has(e.id),`Duplicate ID ${e.id}`);allIds.add(e.id);
@@ -24,3 +25,6 @@ const articleFiles=readdirSync('src/content/articles').filter(f=>f.endsWith('.md
 for(const e of ofKind('article')){const body=readFileSync(`src/content/articles/${e.id}.mdx`,'utf8');assert(body.includes(`entityId: ${e.id}`));assert(body.includes('status: verified'));assert(body.split(/\s+/).length>=800,`Research too short: ${e.id}`);assert(body.includes('/sources/'),`Missing claim citations: ${e.id}`);}
 assert.equal(articleFiles.length,ofKind('article').length);
 console.log(`Validated ${allEntities.length} entities, ${entities.length} published, ${articleFiles.length} MDX articles, ${records.length} museum rights records and ${manifest.length+1} GeoJSON files.`);
+
+for(const [file,size] of Object.entries(imageMetadata)){assert(existsSync(`public${file}`),`Missing responsive image ${file}`);assert(size.width>0&&size.height>0,`Invalid image size ${file}`);}
+for(const e of entities)if(e.image)assert(e.image in imageMetadata,`Missing image metadata ${e.id}`);

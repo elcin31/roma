@@ -1,0 +1,258 @@
+{
+  "method": {
+    "lighthouse": "13.5.0",
+    "base": "http://localhost:4321",
+    "runsPerPage": 3,
+    "profile": "mobile, simulated throttling",
+    "note": "Lab metrics, not real user monitoring. WebGL uses software SwiftShader; TBT is not INP.",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+  },
+  "before": {
+    "home": {
+      "runs": [
+        {
+          "performance": 98.0,
+          "accessibility": 91.0,
+          "lcpMs": 2258.7349,
+          "cls": 0.00259571838767545,
+          "tbtMs": 0,
+          "benchmarkIndex": 2091
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 91.0,
+          "lcpMs": 1960.1855,
+          "cls": 0.00259571838767545,
+          "tbtMs": 0,
+          "benchmarkIndex": 1938
+        },
+        {
+          "performance": 96.0,
+          "accessibility": 91.0,
+          "lcpMs": 2566.2233,
+          "cls": 0.002672777209543821,
+          "tbtMs": 0,
+          "benchmarkIndex": 2065
+        }
+      ],
+      "median": {
+        "performance": 98.0,
+        "accessibility": 91.0,
+        "lcpMs": 2258.7349,
+        "cls": 0.00259571838767545,
+        "tbtMs": 0,
+        "benchmarkIndex": 2065
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1374.1479,
+          "cls": 0.055429990161096364,
+          "tbtMs": 0,
+          "benchmarkIndex": 2017.5
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1515.59475,
+          "cls": 0.055429990161096364,
+          "tbtMs": 0,
+          "benchmarkIndex": 1727.5
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1359.97035,
+          "cls": 0.055429990161096364,
+          "tbtMs": 0,
+          "benchmarkIndex": 2267.5
+        }
+      ],
+      "median": {
+        "performance": 99.0,
+        "accessibility": 100,
+        "lcpMs": 1374.1479,
+        "cls": 0.055429990161096364,
+        "tbtMs": 0,
+        "benchmarkIndex": 2017.5
+      }
+    },
+    "atlas": {
+      "runs": [
+        {
+          "performance": 72.0,
+          "accessibility": 96.0,
+          "lcpMs": 913.1877,
+          "cls": 0.0005953138001929251,
+          "tbtMs": 2215,
+          "benchmarkIndex": 2211
+        },
+        {
+          "performance": 73.0,
+          "accessibility": 96.0,
+          "lcpMs": 909.83745,
+          "cls": 0.0005953138001929251,
+          "tbtMs": 1852,
+          "benchmarkIndex": 2453
+        },
+        {
+          "performance": 71.0,
+          "accessibility": 96.0,
+          "lcpMs": 1807.2517000000003,
+          "cls": 0.0005953138001929251,
+          "tbtMs": 1839.5,
+          "benchmarkIndex": 2171.5
+        }
+      ],
+      "median": {
+        "performance": 72.0,
+        "accessibility": 96.0,
+        "lcpMs": 913.1877,
+        "cls": 0.0005953138001929251,
+        "tbtMs": 1852,
+        "benchmarkIndex": 2211
+      }
+    }
+  },
+  "after": {
+    "home": {
+      "runs": [
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1893.4888,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 2102.5
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1880.9389,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 2301
+        },
+        {
+          "performance": 99.0,
+          "accessibility": 100,
+          "lcpMs": 1884.2872000000002,
+          "cls": 0,
+          "tbtMs": 0,
+          "benchmarkIndex": 1939
+        }
+      ],
+      "median": {
+        "performance": 99.0,
+        "accessibility": 100,
+        "lcpMs": 1884.2872000000002,
+        "cls": 0,
+        "tbtMs": 0,
+        "benchmarkIndex": 2102.5
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1516.1305499999999,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 1893
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1519.2528,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 1904.5
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "lcpMs": 1507.071,
+          "cls": 0.000110247526811016,
+          "tbtMs": 0,
+          "benchmarkIndex": 2104.5
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "lcpMs": 1516.1305499999999,
+        "cls": 0.000110247526811016,
+        "tbtMs": 0,
+        "benchmarkIndex": 1904.5
+      }
+    },
+    "atlas": {
+      "runs": [
+        {
+          "performance": 74.0,
+          "accessibility": 100,
+          "lcpMs": 2107.194,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1244.5000000000005,
+          "benchmarkIndex": 2407
+        },
+        {
+          "performance": 72.0,
+          "accessibility": 100,
+          "lcpMs": 1360.4782500000001,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1914.5,
+          "benchmarkIndex": 2037.5
+        },
+        {
+          "performance": 72.0,
+          "accessibility": 100,
+          "lcpMs": 2107.4345,
+          "cls": 0.000110247526811016,
+          "tbtMs": 1567.000000000001,
+          "benchmarkIndex": 2149
+        }
+      ],
+      "median": {
+        "performance": 72.0,
+        "accessibility": 100,
+        "lcpMs": 2107.194,
+        "cls": 0.000110247526811016,
+        "tbtMs": 1567.000000000001,
+        "benchmarkIndex": 2149
+      }
+    }
+  },
+  "atlasRequests": {
+    "scenario": "117 → 60 BCE → 117 → 60 BCE → 117",
+    "before": 5,
+    "after": 2,
+    "note": "Browser fetch requests; existing HTTP caching may already avoid transferring bytes on repeated requests. The new cache also avoids parsing the same JSON again."
+  },
+  "assets": {
+    "augustusLargeBytes": 98244,
+    "augustusMediumBytes": 42922,
+    "augustusSmallBytes": 18348,
+    "initialAtlasCSSBytes": 12970,
+    "deferredMapLibreCSSBytes": 69918
+  }
+}

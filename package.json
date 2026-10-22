@@ -1,7 +1,41 @@
 {
-  "name": "roma", "version": "1.0.0", "private": true, "type": "module",
-  "scripts": {"dev":"astro dev --host 0.0.0.0", "check":"astro check && tsx scripts/validate.ts", "build":"npm run check && astro build && pagefind --site dist && node scripts/check-links.mjs", "preview":"astro preview --host 0.0.0.0", "test":"playwright test", "test:unit":"tsx --test tests/dates.test.ts"},
-  "dependencies": {"astro":"^5.16.0", "@astrojs/mdx":"^4.3.0", "@astrojs/react":"^4.4.0", "react":"^19.2.0", "react-dom":"^19.2.0", "maplibre-gl":"^5.10.0", "@fontsource/literata":"^5.2.0", "@fontsource/manrope":"^5.2.0", "zod":"^3.25.0"},
-  "devDependencies": {"@astrojs/check":"^0.9.5", "typescript":"^5.9.0", "@types/react":"^19.2.0", "@types/react-dom":"^19.2.0", "@types/node":"^24.0.0", "@types/geojson":"^7946.0.16", "pagefind":"^1.4.0", "@playwright/test":"^1.56.0", "tsx":"^4.20.0", "sharp":"^0.34.0"},
-  "engines":{"node":">=22.12.0"}
+  "name": "roma",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "check": "astro check && tsx scripts/validate.ts",
+    "build": "npm run check && astro build && pagefind --site dist && node scripts/check-links.mjs",
+    "preview": "astro preview --host 0.0.0.0",
+    "test": "playwright test",
+    "test:unit": "tsx --test tests/dates.test.ts"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/react": "^4.4.0",
+    "@fontsource/literata": "^5.2.0",
+    "@fontsource/manrope": "^5.2.0",
+    "astro": "^5.16.0",
+    "maplibre-gl": "^5.10.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "^1.56.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "pagefind": "^1.4.0",
+    "sharp": "^0.34.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
 }
