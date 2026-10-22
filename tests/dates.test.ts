@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {dateSchema,chronologicalYear,formatDate} from '../src/lib/schema';
+test('historical chronology has no zero and crosses the era in one year',()=>{assert.equal(dateSchema.safeParse({year:0}).success,false);assert.equal(chronologicalYear(1)-chronologicalYear(-1),1);assert.deepEqual([-27,-509,14,-1,1].sort((a,b)=>chronologicalYear(a)-chronologicalYear(b)),[-509,-27,-1,1,14]);});
+test('approximate ranges retain the two eras',()=>{assert.equal(formatDate({year:-63,endYear:14,approximate:true}),'ок. 63 до н. э. — 14 н. э.');assert.equal(formatDate({year:-753,label:'Традиционно 753 до н. э.'}),'Традиционно 753 до н. э.');});
