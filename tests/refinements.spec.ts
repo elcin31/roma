@@ -105,3 +105,12 @@ test('home defers the map engine and its stylesheet until the atlas enters view'
   await page.goto('/');await page.evaluate(()=>document.fonts.ready);await expect(page.locator('#maplibre-styles')).toHaveCount(0);
   await page.locator('.atlas').scrollIntoViewIfNeeded();await waitForMap(page);await expect(page.locator('#maplibre-styles')).toHaveCount(1);await expect(page.locator('.map-canvas canvas')).toHaveCount(1);
 });
+
+test('museum viewer cannot lose an early click while scripts are loading',async({page})=>{
+  let release!:()=>void;const gate=new Promise<void>(resolve=>{release=resolve;});
+  await page.route(/\/_astro\/Bookmark\.[^/]+\.js/,async route=>{await gate;await route.continue();});
+  await page.setViewportSize({width:390,height:844});await page.goto('/collection/met-247008/',{waitUntil:'commit'});
+  const zoom=page.getByRole('button',{name:'Увеличить изображение'});
+  await expect(zoom).toBeVisible();await expect(zoom).toBeDisabled();await expect(zoom).toHaveAttribute('aria-busy','true');await expect(page.locator('[data-bookmark]')).toBeDisabled();await expect(page.locator('.menu-toggle')).toBeDisabled();
+  release();await expect(zoom).toBeEnabled();await page.locator('[data-bookmark]').click();await expect(page.locator('[data-bookmark]')).toHaveAttribute('aria-pressed','true');await page.locator('.menu-toggle').click();await expect(page.locator('.menu-toggle')).toHaveAttribute('aria-expanded','true');await page.keyboard.press('Escape');await zoom.click();await expect(page.getByRole('dialog')).toBeVisible();await page.keyboard.press('Escape');await expect(zoom).toBeFocused();
+});

@@ -76,3 +76,5 @@ button:disabled{cursor:not-allowed;opacity:1;color:var(--muted)}
 .timeline-entry-title{font-size:25px;line-height:1.35;letter-spacing:-.025em}.search-result-title{font-size:27px;line-height:1.35;letter-spacing:-.025em}
 @media(max-width:767px){.timeline-entry-title{font-size:24px}.search-result-title{font-size:25px}}
 .site-footer :focus-visible{outline-color:var(--paper)}
+
+:disabled[aria-busy=true]{cursor:progress}

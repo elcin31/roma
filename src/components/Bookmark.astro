@@ -1,11 +1,11 @@
 ---
 interface Props {id:string;}
 ---
-<div class="bookmark-wrap" data-pagefind-ignore><button type="button" class="bookmark" data-bookmark={Astro.props.id} aria-pressed="false"><span aria-hidden="true">＋</span> <span class="bookmark-label">В мою библиотеку</span></button><span class="storage-message" role="status"></span></div>
+<div class="bookmark-wrap" data-pagefind-ignore><button type="button" class="bookmark" data-bookmark={Astro.props.id} aria-pressed="false" disabled aria-busy="true" title="Закладки загружаются"><span aria-hidden="true">＋</span> <span class="bookmark-label">В мою библиотеку</span></button><span class="storage-message" role="status"></span></div>
 <script>
  import {readSaved,writeSaved} from '../lib/storage';
  document.querySelectorAll<HTMLButtonElement>('[data-bookmark]').forEach(button=>{
   const id=button.dataset.bookmark!;const update=()=>{const {ids}=readSaved();const saved=ids.includes(id);button.setAttribute('aria-pressed',String(saved));button.querySelector('.bookmark-label')!.textContent=saved?'Сохранено в библиотеке':'В мою библиотеку';};update();
-  button.addEventListener('click',()=>{const {ids}=readSaved();const next=ids.includes(id)?ids.filter(x=>x!==id):[...ids,id];const ok=writeSaved(next);button.parentElement!.querySelector('.storage-message')!.textContent=ok?'':'Хранилище недоступно. Разрешите сохранение данных в браузере.';if(ok)update()});window.addEventListener('storage',update);window.addEventListener('pageshow',update);
+  button.addEventListener('click',()=>{const {ids}=readSaved();const next=ids.includes(id)?ids.filter(x=>x!==id):[...ids,id];const ok=writeSaved(next);button.parentElement!.querySelector('.storage-message')!.textContent=ok?'':'Хранилище недоступно. Разрешите сохранение данных в браузере.';if(ok)update()});window.addEventListener('storage',update);window.addEventListener('pageshow',update);button.disabled=false;button.removeAttribute('aria-busy');button.removeAttribute('title');
  });
 </script>
