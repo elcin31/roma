@@ -78,3 +78,7 @@ button:disabled{cursor:not-allowed;opacity:1;color:var(--muted)}
 .site-footer :focus-visible{outline-color:var(--paper)}
 
 :disabled[aria-busy=true]{cursor:progress}
+
+.directory-topic{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--sans);font-size:13px;margin:20px 0;color:var(--muted)}
+.directory-topic select{max-width:100%;min-height:44px;padding:8px 36px 8px 12px;border:1px solid var(--stone);border-radius:0;background:var(--paper);color:var(--ink);font:inherit}
+.prose figure{margin-block:36px}.prose figcaption{margin-top:12px;color:var(--muted);font:12px/1.65 var(--sans)}

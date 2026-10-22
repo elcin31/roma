@@ -10,7 +10,7 @@ CACHE.mkdir(exist_ok=True)
 catalogue = json.loads((ROOT / 'src/data/catalog.json').read_text())
 features, provenance = [], []
 for place in catalogue:
-    if place['kind'] != 'place':
+    if place['kind'] != 'place' or place['status'] != 'verified' or not place.get('review'):
         continue
     cache = CACHE / f"place-{place['id']}.txt"
     url = f"https://pleiades.stoa.org/places/{place['pleiadesId']}"

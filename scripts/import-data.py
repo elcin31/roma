@@ -38,7 +38,8 @@ raw=retrieve('ne',url);data=json.loads(raw)
 manifest.append({'id':'land','url':url,'version':'110m snapshot, 2026-10-22','retrieved':'2026-10-22','sha256':hashlib.sha256(raw).hexdigest(),'license':'Public domain','file':'/geo/land.geojson','modifications':'Coordinate precision reduced to 5 decimals. Modern coastline, not reconstructed ancient coastline.'})
 (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 (OUT/'LICENSE-ODbL.txt').write_bytes(retrieve('awmc-license',f'https://raw.githubusercontent.com/AWMC/geodata/{SHA}/LICENSE.txt'))
-ids=[247993,248132,247117,256570,249180,250945,247008,247011]
+# Editorial selection lives in the catalogue; a refresh must not discard later additions.
+ids=[int(e['id'].removeprefix('met-')) for e in json.loads((ROOT/'src/data/catalog.json').read_text()) if e['kind']=='object' and e['status']=='verified' and e.get('review')]
 metadata=[]
 for id in ids:
  url=f'https://collectionapi.metmuseum.org/public/collection/v1/objects/{id}'

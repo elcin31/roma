@@ -1,6 +1,6 @@
 {
   "name": "roma",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "npm run check && astro build && pagefind --site dist && node scripts/check-links.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "test": "playwright test",
-    "test:unit": "tsx --test tests/dates.test.ts"
+    "test:unit": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
