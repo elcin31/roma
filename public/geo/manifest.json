@@ -1,0 +1,62 @@
+[
+  {
+    "id": "republic",
+    "url": "https://raw.githubusercontent.com/AWMC/geodata/7ecf8bccea2efe1e1e9df2daf6001942de73fb87/Cultural-Data/political_shading/roman_empire_bce_60/roman_empire_bce_60.geojson",
+    "version": "7ecf8bccea2efe1e1e9df2daf6001942de73fb87",
+    "retrieved": "2026-10-22",
+    "sha256": "e940ea2facff6163e02ab969d30b26f729c27e1e99db6eee655f7ebc8ac286d3",
+    "license": "ODbL-1.0",
+    "file": "/geo/republic.geojson",
+    "modifications": "Preserved geometry; rounded to 5 decimal places; retained source and temporal fields, removed unused GIS fields. Entire derivative available at file URL."
+  },
+  {
+    "id": "trajan",
+    "url": "https://raw.githubusercontent.com/AWMC/geodata/7ecf8bccea2efe1e1e9df2daf6001942de73fb87/Cultural-Data/political_shading/roman_empire_ce_117_extent/roman_empire_ce_117_extent.geojson",
+    "version": "7ecf8bccea2efe1e1e9df2daf6001942de73fb87",
+    "retrieved": "2026-10-22",
+    "sha256": "1ddd9ac15006e8b9ffd4d185d0302295c3d7c321e9bc8ae3fd627e12d128ba29",
+    "license": "ODbL-1.0",
+    "file": "/geo/trajan.geojson",
+    "modifications": "Preserved geometry; rounded to 5 decimal places; retained source and temporal fields, removed unused GIS fields. Entire derivative available at file URL."
+  },
+  {
+    "id": "severan",
+    "url": "https://raw.githubusercontent.com/AWMC/geodata/7ecf8bccea2efe1e1e9df2daf6001942de73fb87/Cultural-Data/political_shading/roman_empire_ce_200_extent/roman_empire_ce_200_extent.geojson",
+    "version": "7ecf8bccea2efe1e1e9df2daf6001942de73fb87",
+    "retrieved": "2026-10-22",
+    "sha256": "b1517aa96d43547925985069f8beefa761c361cad5986d35c7d607e86821527d",
+    "license": "ODbL-1.0",
+    "file": "/geo/severan.geojson",
+    "modifications": "Preserved geometry; rounded to 5 decimal places; retained source and temporal fields, removed unused GIS fields. Entire derivative available at file URL."
+  },
+  {
+    "id": "provinces",
+    "url": "https://raw.githubusercontent.com/AWMC/geodata/7ecf8bccea2efe1e1e9df2daf6001942de73fb87/Cultural-Data/political_shading/roman_empire_ce_200_provinces/roman_empire_ce_200_provinces.geojson",
+    "version": "7ecf8bccea2efe1e1e9df2daf6001942de73fb87",
+    "retrieved": "2026-10-22",
+    "sha256": "62789827619f774997aa494c0f3b0b985e761b0308786e02bcc35e5644bab11b",
+    "license": "ODbL-1.0",
+    "file": "/geo/provinces.geojson",
+    "modifications": "Preserved geometry; rounded to 5 decimal places; retained source and temporal fields, removed unused GIS fields. Entire derivative available at file URL."
+  },
+  {
+    "id": "roads",
+    "url": "https://raw.githubusercontent.com/AWMC/geodata/7ecf8bccea2efe1e1e9df2daf6001942de73fb87/Cultural-Data/roads/roads.geojson",
+    "version": "7ecf8bccea2efe1e1e9df2daf6001942de73fb87",
+    "retrieved": "2026-10-22",
+    "sha256": "d28e5a1675a59df0037a84e6a8dc5f6b8efc75dbbd74a76ace59dd8285604516",
+    "license": "ODbL-1.0",
+    "file": "/geo/roads.geojson",
+    "modifications": "Preserved geometry; rounded to 5 decimal places; retained source and temporal fields, removed unused GIS fields. Entire derivative available at file URL."
+  },
+  {
+    "id": "land",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+    "version": "110m snapshot, 2026-10-22",
+    "retrieved": "2026-10-22",
+    "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+    "license": "Public domain",
+    "file": "/geo/land.geojson",
+    "modifications": "Coordinate precision reduced to 5 decimals. Modern coastline, not reconstructed ancient coastline."
+  }
+]
