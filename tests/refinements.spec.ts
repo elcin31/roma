@@ -80,7 +80,9 @@ test('museum zoom pans the full image and always restores focus and scrolling',a
   await page.setViewportSize({width:390,height:844});await page.goto('/collection/met-247008/');await page.getByRole('button',{name:'Увеличить изображение'}).click();
   const dialog=page.getByRole('dialog');await expect(dialog.getByRole('button',{name:'Закрыть'})).toBeFocused();await dialog.getByRole('button',{name:'Увеличить до исходного размера'}).click();await expect(dialog).toHaveClass(/is-enlarged/);
   const viewport=dialog.locator('.image-dialog-viewport');expect(await viewport.evaluate(e=>e.scrollWidth>e.clientWidth)).toBe(true);await viewport.evaluate(e=>{e.scrollLeft=150;});expect(await viewport.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);
-  await page.keyboard.press('Escape');await expect(dialog).not.toBeVisible();await expect(page.locator('#zoom-image')).toBeFocused();expect(await page.evaluate(()=>document.documentElement.style.overflow)).toBe('');
+  await page.keyboard.press('Escape');await expect(dialog).not.toBeVisible();await expect(page.locator('#zoom-image')).toBeFocused();
+  // The native dialog restores focus before its queued close handler restores scrolling.
+  await expect.poll(()=>page.evaluate(()=>document.documentElement.style.overflow)).toBe('');
 });
 
 test('clearing search removes the stale query and corrupted bookmarks can be replaced',async({page})=>{
