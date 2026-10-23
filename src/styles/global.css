@@ -33,6 +33,7 @@ button:disabled{cursor:not-allowed;opacity:1;color:var(--muted)}
 .prose h2{font-size:32px;text-wrap:pretty}
 .prose h3{font-size:26px;margin-block:32px 18px}
 .prose p{hyphens:auto;overflow-wrap:break-word}
+.entry p{overflow-wrap:anywhere}
 .prose a:hover{text-decoration-color:var(--wine);text-decoration-thickness:2px}
 .prose a:focus-visible{outline-offset:3px;text-decoration-thickness:2px}
 .prose li+li{margin-top:.55em}.prose figcaption{font-family:var(--sans);font-size:12px;line-height:1.7;color:var(--muted);margin-top:12px}
