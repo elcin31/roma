@@ -1667,5 +1667,648 @@
         "uri": "https://pleiades.stoa.org/author/ghawes"
       }
     ]
+  },
+  {
+    "id": "numantia",
+    "pleiadesId": "246523",
+    "url": "https://pleiades.stoa.org/places/246523",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "H.S. Sivan"
+      },
+      {
+        "username": null,
+        "name": "S.J. Keay"
+      },
+      {
+        "username": null,
+        "name": "R.W. Mathisen"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
+  },
+  {
+    "id": "aquae-sextiae",
+    "pleiadesId": "148053",
+    "url": "https://pleiades.stoa.org/places/148053",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "S. Loseby"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
+  },
+  {
+    "id": "arpinum",
+    "pleiadesId": "432700",
+    "url": "https://pleiades.stoa.org/places/432700",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "N. Purcell"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
+  },
+  {
+    "id": "brundisium",
+    "pleiadesId": "442509",
+    "url": "https://pleiades.stoa.org/places/442509",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "I.E.M. Edlund Berry"
+      },
+      {
+        "username": null,
+        "name": "A.M. Small"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
+  },
+  {
+    "id": "pharsalus",
+    "pleiadesId": "541042",
+    "url": "https://pleiades.stoa.org/places/541042",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "J. Fossey"
+      },
+      {
+        "username": null,
+        "name": "J. Morin"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "diffenda",
+        "homepage": null,
+        "name": "Dan Diffendale",
+        "uri": "https://pleiades.stoa.org/author/diffenda"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": null,
+        "name": "G. Reger"
+      },
+      {
+        "username": "rssmith",
+        "homepage": null,
+        "name": "R. Scott Smith",
+        "uri": "https://pleiades.stoa.org/author/rssmith"
+      },
+      {
+        "username": "ghawes",
+        "homepage": null,
+        "name": "Greta Hawes",
+        "uri": "https://pleiades.stoa.org/author/ghawes"
+      }
+    ]
+  },
+  {
+    "id": "massalia",
+    "pleiadesId": "148127",
+    "url": "https://pleiades.stoa.org/places/148127",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "S. Loseby"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": "pmotylewicz",
+        "homepage": null,
+        "name": "Pierre Motylewicz",
+        "uri": "https://pleiades.stoa.org/author/pmotylewicz"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "iluo",
+        "homepage": null,
+        "name": "Ingrid Luo",
+        "uri": "https://pleiades.stoa.org/author/iluo"
+      }
+    ]
+  },
+  {
+    "id": "praeneste",
+    "pleiadesId": "423013",
+    "url": "https://pleiades.stoa.org/places/423013",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "L. Quilici"
+      },
+      {
+        "username": null,
+        "name": "S. Quilici Gigli"
+      },
+      {
+        "username": "elkon",
+        "homepage": null,
+        "name": "Eleftheria Konstantinidou",
+        "uri": "https://pleiades.stoa.org/author/elkon"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "rssmith",
+        "homepage": null,
+        "name": "R. Scott Smith",
+        "uri": "https://pleiades.stoa.org/author/rssmith"
+      },
+      {
+        "username": "ghawes",
+        "homepage": null,
+        "name": "Greta Hawes",
+        "uri": "https://pleiades.stoa.org/author/ghawes"
+      }
+    ]
+  },
+  {
+    "id": "gergovia",
+    "pleiadesId": "138373",
+    "url": "https://pleiades.stoa.org/places/138373",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "H.S. Sivan"
+      },
+      {
+        "username": null,
+        "name": "R.W. Mathisen"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      }
+    ]
+  },
+  {
+    "id": "bibracte",
+    "pleiadesId": "177473",
+    "url": "https://pleiades.stoa.org/places/177473",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "G.D. Woolf"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "dndimitrov",
+        "homepage": null,
+        "name": "Damian Noah Dimitrov",
+        "uri": "https://pleiades.stoa.org/author/dndimitrov"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
+  },
+  {
+    "id": "nola",
+    "pleiadesId": "432981",
+    "url": "https://pleiades.stoa.org/places/432981",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "N. Purcell"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "rssmith",
+        "homepage": null,
+        "name": "R. Scott Smith",
+        "uri": "https://pleiades.stoa.org/author/rssmith"
+      },
+      {
+        "username": "ghawes",
+        "homepage": null,
+        "name": "Greta Hawes",
+        "uri": "https://pleiades.stoa.org/author/ghawes"
+      }
+    ]
+  },
+  {
+    "id": "dyrrhachium",
+    "pleiadesId": "481818",
+    "url": "https://pleiades.stoa.org/places/481818",
+    "retrieved": "2026-10-22",
+    "license": "CC BY 3.0 US",
+    "contributors": [
+      {
+        "username": null,
+        "name": "J.J. Wilkes"
+      },
+      {
+        "username": null,
+        "name": "DARMC"
+      },
+      {
+        "username": null,
+        "name": "R. Talbert"
+      },
+      {
+        "username": "bkiesling",
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling"
+      },
+      {
+        "username": "sgillies",
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies"
+      },
+      {
+        "username": "jahlfeldt",
+        "homepage": null,
+        "name": "Johan Åhlfeldt",
+        "uri": "https://pleiades.stoa.org/author/jahlfeldt"
+      },
+      {
+        "username": "jbecker",
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker"
+      },
+      {
+        "username": "thomase",
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase"
+      }
+    ]
   }
 ]

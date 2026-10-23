@@ -37,7 +37,7 @@ test('expanded timeline sorts BCE dates and retains uncertainty',()=>{
 });
 test('edition registry has substantive public material and traceable museum rights',()=>{
  for(const id of edition.entityIds){const e=getEntity(id);assert.equal(e.review?.edition,'2.0');assert.deepEqual(editorialIssues(e,byId),[]);}
- const additions=edition.entityIds.map(getEntity);assert.equal(additions.filter(e=>e.kind==='article').length,2);
+ const additions=edition.blocks.find(block=>block.id==='punic-mediterranean')!.entityIds.map(getEntity);assert.equal(additions.filter(e=>e.kind==='article').length,2);
  for(const place of additions.filter(e=>e.kind==='place'))assert(geo.some(r=>r.id===place.id&&r.pleiadesId===place.pleiadesId));
  for(const object of additions.filter(e=>e.kind==='object')){const record=records.find(r=>`met-${r.objectID}`===object.id);assert(record?.isPublicDomain&&record.primaryImage);assert.equal(object.accessionNumber,record.accessionNumber);assert.equal(object.material,record.medium);}
  assert.equal(getEntity('cannae').pleiadesId,'442523');assert.equal(getEntity('messana').pleiadesId,'462538');assert.equal(getEntity('carthago-nova').pleiadesId,'265849');
